@@ -6,48 +6,73 @@ from bot.get_cfg import get_config
 
 
 class Localisation:
-    START_TEXT = "Hello, \n\nThis is a Telegram <b>Video Encoder Bot</b>. \n\n<b>Please send me any Telegram big video file I will compress it as s small video file!</b> \n\n/help for more details. \n\nOwner : @PROFE07XH"
+    START_TEXT = f"""<b>
+    • Hi There; {m.from_user.mention} !
+
+    -I'm Video encoder bot, I can Encode video or Compress video.
+    -Hit /help to find out more about how to use me to my full potential.
+    
+    -Bot Developer- <a href='t.me/stupidboi69'>Stupidboi69</a> </b>
+    """
    
-    ABS_TEXT = " Please don't be selfish."
+    ABS_TEXT = "**-Please don't be selfish.**"
     
-    FORMAT_SELECTION = "Select the desired format: <a href='{}'>file size might be approximate</a> \nIf you want to set custom thumbnail, send photo before or quickly after tapping on any of the below buttons.\nYou can use /deletethumbnail to delete the auto-generated thumbnail."
+    FORMAT_SELECTION = """<b>
+    -Select the desired format: <a href='{}'>file size might be approximate</a>.
+    
+    -If you want to set custom thumbnail, send photo before or quickly after tapping on any of the below buttons.
+    -Hit /deletethumbnail to delete the auto-generated thumbnail.</b>
+    """
     
     
-    DOWNLOAD_START = "📥 Downloading ... 📥 \n"
+    DOWNLOAD_START = "**-Downloading is about to start**\n"
     
-    UPLOAD_START = "📤 Uploading ... 📤 \n"
+    UPLOAD_START = "**Uploading is about to start**\n"
     
-    COMPRESS_START = "📀 Trying to encode ... 📀"
+    COMPRESS_START = "**-Encoding is about to start**\n"
     
-    RCHD_BOT_API_LIMIT = "size greater than maximum allowed size (50MB). Neverthless, trying to upload."
+    RCHD_BOT_API_LIMIT = "**-Size should be greater than maximum allowed size (50MB). Neverthless, trying to upload."
     
-    RCHD_TG_API_LIMIT = "Downloaded in {} seconds.\nDetected File Size: {}\nSorry. But, I cannot upload files greater than 1.95GB due to Telegram API limitations."
+    RCHD_TG_API_LIMIT = """<b>
+    -Downloaded in {} seconds.
+    -Detected File Size: {}
+    -Sorry. But, I cannot upload files greater than 1.95GB due to Telegram API limitations.</b>
+    """
     
-    COMPRESS_SUCCESS = "☆ @PROFE07XH"
+    COMPRESS_SUCCESS = "@StupidBoi"
 
-    COMPRESS_PROGRESS = "⏳ ETA: {}\n🚀 Progress: {}%"
+    COMPRESS_PROGRESS = "<b>-ETA     : {}\n-Progress: {}%</b>"
 
-    SAVED_CUSTOM_THUMB_NAIL = "Custom video / file thumbnail saved. This image will be used in the video / file."
+    SAVED_CUSTOM_THUMB_NAIL = "**-Custom video / file thumbnail saved. This image will be used in the video / file.**"
     
-    DEL_ETED_CUSTOM_THUMB_NAIL = "✅ Custom thumbnail cleared succesfully."
+    DEL_ETED_CUSTOM_THUMB_NAIL = "-Custom thumbnail cleared succesfully.**"
     
-    FF_MPEG_DEL_ETED_CUSTOM_MEDIA = "✅ Media cleared succesfully."
+    FF_MPEG_DEL_ETED_CUSTOM_MEDIA = "**-Media cleared succesfully.**"
     
-    SAVED_RECVD_DOC_FILE = "✅ Downloaded Successfully."
+    SAVED_RECVD_DOC_FILE = "**-Downloaded Successfully.**"
     
     CUSTOM_CAPTION_UL_FILE = " "
     
-    NO_CUSTOM_THUMB_NAIL_FOUND = "No Custom ThumbNail found."
+    NO_CUSTOM_THUMB_NAIL_FOUND = "**-No Custom ThumbNail found.**"
     
-    NO_VOID_FORMAT_FOUND = "no-one gonna help you\n{}"
+    NO_VOID_FORMAT_FOUND = "**no-one gonna help you\n-{}**"
     
-    USER_ADDED_TO_DB = "User <a href='tg://user?id={}'>{}</a> added to {} till {}."
+    USER_ADDED_TO_DB = "<b>User <a href='tg://user?id={}'>{}</a> added to {} till {}.</b>"
     
-    FF_MPEG_RO_BOT_STOR_AGE_ALREADY_EXISTS = "⚠️ Already one Process going on! ⚠️ \n\nCheck Live Status on Updates Channel."
+    FF_MPEG_RO_BOT_STOR_AGE_ALREADY_EXISTS = """<b>
+    -Already one Process going on!
+    -Check Live Status on Updates Channel.</b>
+    """
     
     HELP_MESSAGE = get_config(
         "STRINGS_HELP_MESSAGE",
-        "Hi, I am Video Compressor Bot \n\n1. Send me your telegram big video file \n2. Reply to the file with: `/compress 50` \n\nMade By: @PROFE07XH"
+        """<b>-Hi, I am Video Compressor Bot
+        
+        1. Send me your telegram big video file,
+        2. Reply to the file with: /compress 50.
+        
+        -Bot Developer- @StupidBoi
+        """
     )
     WRONG_MESSAGE = get_config(
         "STRINGS_WRONG_MESSAGE",
