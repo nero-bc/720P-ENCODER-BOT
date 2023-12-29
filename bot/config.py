@@ -16,7 +16,7 @@ class Config(object):
 
     API_HASH = get_config("API_HASH", "0b691c3e86603a7e34aae0b5927d725a")
 
-    LOG_CHANNEL = get_config("LOG_CHANNEL", "jav_porn_hd")
+    LOG_CHANNEL = get_config("LOG_CHANNEL", "-1001955639051")
 
     UPDATES_CHANNEL = get_config("UPDATES_CHANNEL", None) # Without @ LOL
 
