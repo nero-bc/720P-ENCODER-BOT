@@ -7,7 +7,7 @@ from bot.get_cfg import get_config
 
 class Localisation:
     START_TEXT = f"""<b>
-    • Hi There; {updates.from_user.mention} !
+    • Hi There !
 
     -I'm Video encoder bot, I can Encode video or Compress video.
     -Hit /help to find out more about how to use me to my full potential.
