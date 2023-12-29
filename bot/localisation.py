@@ -7,7 +7,7 @@ from bot.get_cfg import get_config
 
 class Localisation:
     START_TEXT = f"""<b>
-    • Hi There; {m.from_user.mention} !
+    • Hi There; {updates.from_user.mention} !
 
     -I'm Video encoder bot, I can Encode video or Compress video.
     -Hit /help to find out more about how to use me to my full potential.
@@ -39,7 +39,7 @@ class Localisation:
     -Sorry. But, I cannot upload files greater than 1.95GB due to Telegram API limitations.</b>
     """
     
-    COMPRESS_SUCCESS = "@StupidBoi"
+    COMPRESS_SUCCESS = "@StupidBoi69"
 
     COMPRESS_PROGRESS = "<b>-ETA     : {}\n-Progress: {}%</b>"
 
